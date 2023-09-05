@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body{
+    background-color: var(--background-color);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    background-image: url(../images/bg-pattern-bottom.svg), url(../images/bg-pattern-top.svg);
+    background-position: left bottom, right top;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+hr{
+    width: 100%;
+}
+
+.card{
+    background-image: url(../images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px;
+    width: 330px;
+    height: 350px;
+}
+
+.card .informacoes-do-perfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+}
+
+.card .informacoes-do-perfil img{
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.card .numeros-do-perfil{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.numeros-do-perfil .informacoes-do-perfil .contador .card .info{
+    font-weight: 700;
+}
+
+.card .informacoes-do-perfil .idade, .card .informacoes-do-perfil .cidade, .numeros-do-perfil .info .tipo-de-contador{
+    color: var(--text-color);
+}
